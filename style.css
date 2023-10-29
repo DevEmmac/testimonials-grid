@@ -1,0 +1,319 @@
+:root {
+    --Moderate-violet: hsl(263, 55%, 52%);
+    --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(0, 0%, 81%);
+    --gray-md: rgb(90, 88, 88);
+    --Light-grayish-blue: hsl(210, 46%, 95%);   
+}
+
+*html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: var(--Light-grayish-blue);
+}
+
+.main-container {
+    width: 78%;
+    margin: auto;
+    height: min-content;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.daniel, .patrick {
+    width: 30rem;
+    height: 18rem;
+    background: var(--Moderate-violet);
+    border-radius: 0.5rem;
+    position: relative;
+}
+
+.dan, .jona, .jea , .pat, .ki{
+    display: flex;
+    flex-grow: row;  
+}
+
+#danielpic, #patpic {
+    width: 3rem;
+    height: 3rem;
+    border: 2px solid var(--Moderate-violet);
+    border-radius: 50%;
+    margin: 1.5rem 1.2rem 1rem 1.7rem;
+}
+
+#danielquote {
+    width: 7rem;
+    height: 7rem;
+    margin-left: 6rem;
+}
+
+.hs {
+    line-height: 0.3rem;
+    margin-top: 1.6rem;
+}
+
+.hs > h2 {
+    font-size: 1rem;
+    color: white;
+}
+
+.hs > h3 {
+    font-size: 0.8rem;
+    color: var(--Light-gray);
+    
+}
+
+.daniel > h4, .patrick > h4 {
+    z-index: 1;
+    width: 26rem;
+    font-size: 0.9rem;
+    color: white;
+    line-height: 1.3rem;
+    margin-top: -1.1rem;
+    margin-left: 1.7rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.daniel > p, .patrick > p {
+    line-height: 0.9rem;
+    width: 26rem;
+    margin-left: 1.6rem;
+    font-size: 0.8rem;
+    color: var(--Light-gray);
+}
+
+.jonathan, .jeanette, .kira {
+    text-align: start;
+    width: 16.5rem;
+    height: 18rem;
+    background: var(--Very-dark-grayish-blue);
+    border-radius: 0.5rem;
+
+}
+
+.jeanette {
+    grid-column: 1 / 1;
+}
+
+.patrick {
+    margin-left: -13.5rem;
+    background: var(--Very-dark-blackish-blue);
+}
+
+#jona, #jea, #kirapic {
+    width: 3rem;
+    height: 3rem;
+    border: 2px solid var(--gray-md);
+    border-radius: 50%;
+    margin: 1.5rem 1.2rem 0 1.7rem;
+}
+
+.jonathan > h4, .jeanette > h4, .kira > h4 {
+    width: 12.5rem;
+    font-size: 1.1rem;
+    color: white;
+    line-height: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.jonathan > h4 {
+    margin-top: 0.8rem;
+}
+
+.jonathan > p {
+    margin-top: -0.7rem;
+}
+.jonathan > p, .jeanette > p, .kira > p {
+    line-height: 1rem;
+    width: 12.3rem;
+    font-size: 0.8rem;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--Light-gray);
+}
+
+.jeanette {
+    background: var(--White);
+    box-shadow: 0 0 0.5rem 0.2rem rgba(0, 0, 0, 0.16);
+
+}
+
+.jeanette > h4, .kira > h4 {
+    color: var(--Very-dark-blackish-blue);
+}
+
+h2 > span {
+    color: var(--gray-md)
+}
+
+p > span {
+    color: var(--gray-md);
+}
+
+.patrick > h4 {
+    margin-top: 1rem;
+}
+
+.kira {
+    height: 37.5rem;
+    grid-column: 3 / 3;
+    margin-top: -19.45rem;
+    background: var(--White);
+    box-shadow: 0 0 0.5rem 0.3rem rgba(0, 0, 0, 0.16);
+} 
+
+.kira > p {display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+}
+
+.attribution {
+    width: 25rem;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--Very-dark-blackish-blue);
+}
+
+.attribution > a {
+    text-decoration: none;
+    color: var(--Very-dark-grayish-blue);
+
+}
+
+/* for mobile screen */
+
+@media screen and (max-width: 500px) {
+    .main-container {
+        width: 80%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        margin-top: 5rem;
+    }
+
+    .daniel {
+        height: 37rem;
+        text-align: start;
+        width: 22rem;
+        background: var(--Moderate-violet);
+        border-radius: 0.5rem;
+
+    }
+
+    #danielquote {
+        width: 7rem;
+        height: 7rem;
+        margin-left: 0.9rem;
+        
+    }
+    
+    .daniel > h4 {
+        margin-top: -1rem;
+        width: 18.7rem;
+        font-size: 1.2rem;
+        color: white;
+        line-height: 1.8rem;
+        font-family: Arial, Helvetica, sa
+    }
+   
+    .jonathan {
+        height: 19rem;
+        text-align: start;
+        width: 22rem;
+        background: var(--Very-dark-grayish-blue);
+        border-radius: 0.5rem;
+    }
+
+     
+    .jonathan > h4 {
+        width: 19rem;
+        font-size: 1.2rem;
+        color: white;
+        line-height: 1.6rem;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .jonathan > p, .jeanette > p, .kira > p, .daniel > p {
+        line-height: 1.4rem;
+        width: 18.3rem;
+        font-size: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+        color: var(--Light-gray);
+    }
+    
+    .jeanette {
+        height: 19rem;
+        text-align: start;
+        width: 22rem;
+        border-radius: 0.5rem;
+        background: var(--White);
+        box-shadow: 0 0 0.5rem 0.2rem rgba(0, 0, 0, 0.16);
+     
+    }
+
+    
+    .jeanette > h4, .kira > h4 {
+        color: var(--Very-dark-blackish-blue);
+        width: 19rem;
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .patrick {
+        margin-left: 0rem;
+        height: 32rem;
+        text-align: start;
+        width: 22rem;
+        background: var(--Very-dark-blackish-blue);
+        border-radius: 0.5rem;
+    }
+
+    .patrick > h4 {
+        width: 19rem;
+        font-size: 1.2rem;
+        color: white;
+        line-height: 1.6rem;
+        font-family: Arial, Helvetica, sans-serif;
+    } 
+
+    .patrick > p {
+        width: 18.3rem;
+        font-size: 1rem;
+        line-height: 1.4rem;
+        margin-left: auto;
+        margin-right: auto;
+        color: var(--Light-gray);
+
+    }
+
+    .kira {
+        text-align: start;
+        width: 22rem;
+        border-radius: 0.5rem;
+        height: 37rem;
+        margin-top: 0rem;
+        margin-bottom: 1rem;
+        background: var(--White);
+        box-shadow: 0 0 0.5rem 0.3rem rgba(0, 0, 0, 0.16);
+    } 
+    
+    .attribution {
+        display: none;
+    }
+}
